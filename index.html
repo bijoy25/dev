@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BijoyDev-Portfilio</title>
+  <meta name="description" content="BijoyDev - Web Designer & WordPress Developer, SEO, WooCommerce, Blog and Business website services.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  <script>tailwind.config = { darkMode: 'class' }</script>
+  <style>
+    .img{
+      height: 200px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body class="font-sans bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-500">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-600 dark:bg-gray-800 sticky top-0 z-50 shadow">
+    <div class="max-w-7xl mx-auto px-6 sm:px-32 flex justify-between items-center py-4">
+      <div class="text-white text-2xl font-bold"><a href="index.html">BijoyDev</a></div>
+
+      <!-- Desktop Menu + Dark Toggle -->
+      <div class="hidden md:flex items-center space-x-6">
+        <ul class="flex space-x-6 text-white">
+          <li><a href="#hero" class="hover:text-yellow-400">Home</a></li>
+          <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+          <li><a href="#services" class="hover:text-yellow-400">Services</a></li>
+          <li><a href="#portfolio" class="hover:text-yellow-400">Portfolio</a></li>
+          <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+        </ul>
+        <button id="darkToggle" class="bg-yellow-400 text-black px-3 py-1 rounded hover:bg-yellow-300 transition ml-4">🌙</button>
+      </div>
+
+      <!-- Mobile Hamburger + Dark Toggle -->
+      <div class="flex md:hidden items-center space-x-3">
+        <button id="darkToggleMobile" class="bg-yellow-400 text-black px-3 py-1 rounded hover:bg-yellow-300 transition">🌙</button>
+        <button id="menu-btn" class="text-white focus:outline-none">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <ul id="mobile-menu" class="hidden md:hidden bg-blue-600 dark:bg-gray-800 px-6 sm:px-32 flex flex-col space-y-2 pb-4">
+      <li><a href="#hero" class="block py-2 text-white hover:text-yellow-400">Home</a></li>
+      <li><a href="#about" class="block py-2 text-white hover:text-yellow-400">About</a></li>
+      <li><a href="#services" class="block py-2 text-white hover:text-yellow-400">Services</a></li>
+      <li><a href="#portfolio" class="block py-2 text-white hover:text-yellow-400">Portfolio</a></li>
+      <li><a href="#contact" class="block py-2 text-white hover:text-yellow-400">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative bg-gradient-to-r from-blue-600 via-purple-600 to-pink-500 text-white min-h-[70vh] flex items-center py-6">
+    <div class="container mx-auto px-6 sm:px-32 flex flex-col md:flex-row items-center justify-between w-full">
+      <div class="text-center md:text-left max-w-xl">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">Hi, I'm <span class="text-yellow-300">Bijoy</span></h1>
+        <h1 class="text-lg md:text-3xl font-bold mb-4 leading-tight">Professional Frontend & WordPress Designer</h1>
+        <p class="text-lg md:text-xl mb-6 text-gray-200">I craft modern, responsive, and user-friendly website designs using HTML, CSS, Tailwind, and WordPress. From clean landing pages to full-featured business sites, I turn ideas into functional, visually appealing websites that help brands grow online.</p>
+        <a href="#contact" class="inline-block bg-yellow-400 text-blue-900 font-semibold px-6 py-3 rounded-lg shadow-lg transform transition hover:scale-105 hover:shadow-xl">Hire Me</a>
+      </div>
+      <div class="mt-10 md:mt-0 md:w-1/2 flex justify-end">
+        <img src="img/bijoy.jpeg" alt="Developer" class="w-56 md:w-72 rounded-full">
+      </div>
+    </div>
+    <div class="absolute top-10 left-10 w-16 h-16 bg-yellow-300 rounded-full mix-blend-multiply opacity-30 animate-pulse"></div>
+    <div class="absolute bottom-10 right-10 w-20 h-20 bg-purple-400 rounded-full mix-blend-multiply opacity-30 animate-ping"></div>
+  </section>
+
+  <!-- About Section -->
+    <section id="about" class="py-20 container mx-auto px-6 sm:px-32">
+      <div class="flex flex-col md:flex-row items-center md:items-start md:justify-between gap-10">
+        
+        <!-- Left: About Text -->
+        <div class="md:w-1/2 text-left">
+          <h2 class="text-4xl font-bold mb-6">About Me</h2>
+          <p class="text-lg text-gray-600 dark:text-gray-300">
+            I am a passionate Web Designer and WordPress Developer. I create modern, responsive, and user-friendly websites.
+            Skilled in SEO optimization, WooCommerce, Blog websites, Business websites development and  landing pages.
+          </p>
+        </div>
+
+        <!-- Right: Location -->
+         <div class="md:w-1/2 flex justify-center md:justify-end">
+         <iframe class="rounded-md" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14531.401655763775!2d91.05932234999999!3d24.4212638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3756b09fbee80e03%3A0x33ca408cd3cf9335!2sMithamain!5e0!3m2!1sen!2sbd!4v1758203643008!5m2!1sen!2sbd" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+      </div>
+    </section>
+
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 bg-gray-50 dark:bg-gray-800">
+    <div class="container mx-auto px-6 sm:px-32 text-center">
+      <h2 class="text-4xl font-bold mb-12">My Services</h2>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-white dark:bg-gray-700 p-8 rounded-xl shadow hover:shadow-2xl transition transform hover:-translate-y-3 hover:scale-105"><div class="text-5xl mb-4">💻</div><h3 class="text-2xl font-semibold mb-2">Web Design</h3><p class="text-gray-600 dark:text-gray-300">Modern, responsive, and user-friendly web designs that attract visitors and keep them engaged</p></div>
+        <div class="bg-white dark:bg-gray-700 p-8 rounded-xl shadow hover:shadow-2xl transition transform hover:-translate-y-3 hover:scale-105"><div class="text-5xl mb-4">⚙️</div><h3 class="text-2xl font-semibold mb-2">WordPress Development</h3><p class="text-gray-600 dark:text-gray-300">Custom WordPress websites built with Elementor and premium themes for any business nee</p></div>
+        <div class="bg-white dark:bg-gray-700 p-8 rounded-xl shadow hover:shadow-2xl transition transform hover:-translate-y-3 hover:scale-105"><div class="text-5xl mb-4">📈</div><h3 class="text-2xl font-semibold mb-2">SEO & Optimization</h3><p class="text-gray-600 dark:text-gray-300">Boost your website’s Google ranking with fast, SEO-optimized, and performance-driven design</p></div>
+        <div class="bg-white dark:bg-gray-700 p-8 rounded-xl shadow hover:shadow-2xl transition transform hover:-translate-y-3 hover:scale-105"><div class="text-5xl mb-4">🛒</div><h3 class="text-2xl font-semibold mb-2">WooCommerce Website</h3><p class="text-gray-600 dark:text-gray-300">Fully functional online stores with secure checkout and modern e-commerce features.</p></div>
+        <div class="bg-white dark:bg-gray-700 p-8 rounded-xl shadow hover:shadow-2xl transition transform hover:-translate-y-3 hover:scale-105"><div class="text-5xl mb-4">📝</div><h3 class="text-2xl font-semibold mb-2">Blog Website</h3><p class="text-gray-600 dark:text-gray-300">Clean, SEO-friendly blog designs that improve readability and traffic growth</p></div>
+        <div class="bg-white dark:bg-gray-700 p-8 rounded-xl shadow hover:shadow-2xl transition transform hover:-translate-y-3 hover:scale-105"><div class="text-5xl mb-4">🏢</div><h3 class="text-2xl font-semibold mb-2">Business Website</h3><p class="text-gray-600 dark:text-gray-300">Professional business websites that build trust, credibility, and help generate leads.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-20 container mx-auto px-6 sm:px-32 text-center">
+    <h2 class="text-4xl font-bold mb-12">Portfolio</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <a href="https://bijoy25.github.io/business"><div class="overflow-hidden rounded-lg shadow hover:scale-105 transform transition"><img class="img" src="img/business1.png" alt="Project 1"><h3 class="bg-blue-600 text-white text-lg p-3">Business website ➔</h3></div></a>
+
+      <a href="https://bijoy25.github.io/ecommerce/"><div class="overflow-hidden rounded-lg shadow hover:scale-105 transform transition"><img class="img" src="img/e-commerce.jpeg" alt="Project 2"><h3 class="bg-blue-600 text-white text-lg p-3">E-commerce site ➔</h3></div></a>
+
+      <a href="https://bijoy25.github.io/eso/"><div class="overflow-hidden rounded-lg shadow hover:scale-105 transform transition"><img class="img" src="img/seo.png" alt="Project 3"><h3 class="bg-blue-600 text-white text-lg p-3">SEO & website ➔</h3></div></a>
+
+      <a href="https://bijoy25.github.io/blogs/"><div class="overflow-hidden rounded-lg shadow hover:scale-105 transform transition"><img class="img" src="img/blogs.png" alt="Project 4"><h3 class="bg-blue-600 text-white text-lg p-3">Blog website ➔</h3></div></a>
+
+      <a href="https://bijoy25.github.io/landing-page/"><div class="overflow-hidden rounded-lg shadow hover:scale-105 transform transition"><img class="img" src="img/landing.png" alt="Project 5"><h3 class="bg-blue-600 text-white text-lg p-3">SaaS Startup Landing Page ➔</h3></div></a>
+
+      <a href="http://bijoy.iceiy.com/ecom/"><div class="overflow-hidden rounded-lg shadow hover:scale-105 transform transition"><img class="img w-full" src="img/woocommerce.png" alt="Project 6"><h3 class="bg-blue-600 text-white text-lg p-3">Wordpress Woocommerce ➔</h3></div></a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-50 dark:bg-gray-800 text-center mx-auto px-6 sm:px-32">
+      <h2 class="text-4xl font-bold mb-12">Contact Me</h2>
+      <form id="contactForm" class="max-w-lg mx-auto flex flex-col gap-4" action="https://formspree.io/f/mnnbvvbb" method="POST">
+        <input type="text"  name="name" placeholder="Your Name" required class="p-3 border rounded  outline-none text-white dark:bg-black">
+        <input type="email"  name="email" placeholder="Your Email" required class="p-3 border rounded  outline-none text-white dark:bg-black">
+        <textarea name="message"  rows="5" placeholder="Your Message" required class="p-3 border rounded  outline-none text-white dark:bg-black"></textarea>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded">Send Message</button>
+        <p id="formMessage" class="mt-2 text-green-600 font-medium hidden"></p>
+      </form>
+
+      
+
+    </section>
+
+    <script>
+      const form = document.getElementById('contactForm');
+      const formMessage = document.getElementById('formMessage');
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault(); // 
+
+        const formData = new FormData(form);
+
+        try {
+          const response = await fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+          });
+
+          if (response.ok) {
+            formMessage.textContent = "✅ Message sent successfully!";
+            formMessage.classList.remove('hidden');
+            form.reset(); 
+          } else {
+            formMessage.textContent = "⚠️ Oops! Something went wrong.";
+            formMessage.classList.remove('hidden');
+            formMessage.classList.remove('text-green-600');
+            formMessage.classList.add('text-red-600');
+          }
+        } catch (error) {
+          formMessage.textContent = "⚠️ Error sending message.";
+          formMessage.classList.remove('hidden');
+          formMessage.classList.remove('text-green-600');
+          formMessage.classList.add('text-red-600');
+        }
+      });
+
+    </script>
+
+
+  <!-- Footer -->
+  <!-- Add this in <head> for Font Awesome -->
+
+
+<footer class="bg-gray-800 text-white text-center py-6 mx-auto px-6 sm:px-32">
+    <hr class="my-12 h-0.5 border-t-0 bg-neutral-100 dark:bg-white/10" />
+   <div class="md:flex justify-between items-center">
+    <div class="flex justify-center space-x-6">
+        <!-- Facebook -->
+        <a href="https://web.facebook.com/bijoy.sikdar.21306/?sk=friends" class="hover:text-blue-600 transition-transform transform hover:scale-110">
+            <i class="fab fa-facebook-f fa-lg"></i>
+        </a>
+        <!-- GitHub -->
+        <a href="https://github.com/bijoy25" class="hover:text-gray-400 transition-transform transform hover:scale-110">
+            <i class="fab fa-github fa-lg"></i>
+        </a>
+        <!-- WhatsApp -->
+        <a href="https://wa.me/8801601612320" class="hover:text-green-500 transition-transform transform hover:scale-110">
+            <i class="fab fa-whatsapp fa-lg"></i>
+        </a>
+        
+    </div>
+    <p class="">&copy; 2025 BijoyDev. All Rights Reserved.</p>
+    </div>
+    
+</footer>
+
+  <!-- Scripts -->
+  <script>
+    // Mobile Menu Toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Dark Mode Toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      const html = document.documentElement;
+      const darkBtns = document.querySelectorAll('#darkToggle, #darkToggleMobile');
+
+      darkBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          html.classList.toggle('dark');
+          localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+        });
+      });
+
+      if(localStorage.getItem('theme') === 'dark') {
+        html.classList.add('dark');
+      }
+    });
+  </script>
+
+</body>
+</html>
